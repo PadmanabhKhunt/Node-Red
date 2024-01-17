@@ -1,0 +1,1648 @@
+[
+    {
+        "id": "d1edf2dfd85d9abb",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7d3678cbee676bec",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "508cc9124d7eeab6",
+        "type": "subflow",
+        "name": "convertConsumptionFx",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 500,
+                "y": 320,
+                "wires": [
+                    {
+                        "id": "dcde2b4736ef4c24"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 780,
+                "y": 320,
+                "wires": [
+                    {
+                        "id": "dcde2b4736ef4c24",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "f83f9fc08f5e66d7",
+        "type": "subflow",
+        "name": "MGDB",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 500,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "38ed6a5fa6871842"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 980,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "38ed6a5fa6871842",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "7cf6ee7ab0891d5c",
+        "type": "subflow",
+        "name": "MGInFx",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 260,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "f0acb1890ca94018"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1080,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "6770036c3a166587",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "cc759b59f1b564bf",
+        "type": "subflow",
+        "name": "saicActionFx",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 500,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "594601dc8c93b65a"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 760,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "594601dc8c93b65a",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "94975f0123611419",
+        "type": "subflow",
+        "name": "tableFormatFx",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 320,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "b71dc036ccc52791"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 640,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "b71dc036ccc52791",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "a02324a854d745d2",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#3a0977",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#3a0977",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#3a0977",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#5d0ebe",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#3a0977",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "969abc0bc5326581",
+        "type": "ui_group",
+        "name": "table",
+        "tab": "57cf501debf27035",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f17446b7c1d3cb73",
+        "type": "ui_group",
+        "name": "Settings",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "478c276373a3b3f3",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c4ebb08ad2ca17ee",
+        "type": "ui_group",
+        "name": "GPS",
+        "tab": "60a47f613ecb0a54",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "61532e657ce47050",
+        "type": "ui_group",
+        "name": "Button 1",
+        "tab": "478c276373a3b3f3",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0ba8fa73951796fb",
+        "type": "ui_group",
+        "name": "Button 2",
+        "tab": "478c276373a3b3f3",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c057fcc6106004d9",
+        "type": "ui_group",
+        "name": "Button 3",
+        "tab": "478c276373a3b3f3",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9ba1b1dd4509537d",
+        "type": "ui_group",
+        "name": "Guage",
+        "tab": "478c276373a3b3f3",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "85730c7e889f3811",
+        "type": "ui_spacer",
+        "z": "d1edf2dfd85d9abb",
+        "name": "spacer",
+        "group": "9ba1b1dd4509537d",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f1650e12897bf060",
+        "type": "mqtt-broker",
+        "name": "MQTT",
+        "broker": "http://192.168.26.32",
+        "port": "3000",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e4e15a53b1e7d2f0",
+        "type": "ui_group",
+        "name": "slider",
+        "tab": "478c276373a3b3f3",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7b50355ec618272d",
+        "type": "ui_group",
+        "name": "Audio Out Put",
+        "tab": "478c276373a3b3f3",
+        "order": 6,
+        "disp": true,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6472389d15f1336f",
+        "type": "ui_group",
+        "name": "Maps",
+        "tab": "",
+        "order": 2,
+        "disp": false,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "51eafba7.ffc054",
+        "type": "ui_group",
+        "name": "Car Status",
+        "tab": "60a47f613ecb0a54",
+        "order": 1,
+        "disp": false,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "acbce132.6eef4",
+        "type": "mqtt-broker",
+        "name": "mosquitto",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "779fd73bbe80ab61",
+        "type": "ui_group",
+        "name": "Journalier",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": 18,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9d9f0155553a9dcb",
+        "type": "ui_group",
+        "name": "Mensuel",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "799e85c6a93a19ad",
+        "type": "sqlitedb",
+        "z": "f83f9fc08f5e66d7",
+        "db": "mg.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "757e94f52c80fb34",
+        "type": "websocket-client",
+        "path": "http://192.168.26.32:3000/get",
+        "tls": "",
+        "wholemsg": "false",
+        "hb": "0",
+        "subprotocol": ""
+    },
+    {
+        "id": "5eb07f1af39702c6",
+        "type": "websocket-listener",
+        "path": "/update",
+        "wholemsg": "true"
+    },
+    {
+        "id": "7eede8785771d6c7",
+        "type": "postgresDB",
+        "name": "show ",
+        "host": "localhost",
+        "port": "5432",
+        "database": "phvalue",
+        "ssl": false,
+        "max": "10",
+        "min": 1,
+        "idle": "1000"
+    },
+    {
+        "id": "ca40e8de353b4c2c",
+        "type": "ui_group",
+        "name": "Chart",
+        "tab": "57cf501debf27035",
+        "order": 7,
+        "disp": true,
+        "width": "16",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "42f3200a02d590da",
+        "type": "sqlitedb",
+        "db": "phvalue",
+        "mode": "RO"
+    },
+    {
+        "id": "f74675e296f26ea8",
+        "type": "MydbDatabase",
+        "name": "",
+        "dialect": "postgres",
+        "host": "120.0.0.1",
+        "port": "5432",
+        "db": "phvalue",
+        "tz": "+08:00",
+        "charset": "utf8mb4",
+        "options": "{\"logging\": false,\"pool\":{\"max\":50,\"idle\":30000,\"evict\":30000}}",
+        "model": "{}"
+    },
+    {
+        "id": "0d08b4bafb7d7932",
+        "type": "postgresDB",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "5432",
+        "database": "postgres",
+        "ssl": false,
+        "max": "10",
+        "min": 1,
+        "idle": "1000"
+    },
+    {
+        "id": "3fa68897588c2dc4",
+        "type": "postgreSQLConfig",
+        "name": "",
+        "host": "127.0.0.1",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "phvalue",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "padmanabh2",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "0176d9cb2bbf948d",
+        "type": "MydbDatabase",
+        "name": "",
+        "dialect": "postgres",
+        "host": "127.0.0.1",
+        "port": "5432",
+        "db": "phvalue",
+        "tz": "+08:00",
+        "charset": "utf8mb4",
+        "options": "{\"logging\": false,\"pool\":{\"max\":50,\"idle\":30000,\"evict\":30000}}",
+        "model": "{}"
+    },
+    {
+        "id": "57cf501debf27035",
+        "type": "ui_tab",
+        "name": "chart",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "eed97b0da00c1f11",
+        "type": "ui_group",
+        "name": "Chart and Table",
+        "tab": "57cf501debf27035",
+        "order": 2,
+        "disp": false,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cae1d2d6d7638d94",
+        "type": "ui-group",
+        "name": "chart",
+        "page": "7677b5a4653cf2bb",
+        "width": "6",
+        "height": "1",
+        "order": -1,
+        "showTitle": true,
+        "className": ""
+    },
+    {
+        "id": "063f8d8d58752292",
+        "type": "ui-base",
+        "name": "chart",
+        "path": "/dashboard",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ]
+    },
+    {
+        "id": "d6926203db87819c",
+        "type": "ui-base",
+        "name": "Chart",
+        "path": "/dashboard",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ]
+    },
+    {
+        "id": "386233f10703cec4",
+        "type": "ui-theme",
+        "name": "chart theme",
+        "colors": {
+            "surface": "#938a8a",
+            "primary": "#80c8e5",
+            "bgPage": "#3e3c3c",
+            "groupBg": "#b95b5b",
+            "groupOutline": "#575757"
+        }
+    },
+    {
+        "id": "da0664aa85a88879",
+        "type": "ui-group",
+        "name": "Group Name",
+        "page": "",
+        "width": "6",
+        "height": "1",
+        "order": -1,
+        "showTitle": true,
+        "className": ""
+    },
+    {
+        "id": "8175a8969352c207",
+        "type": "ui_group",
+        "name": "chart",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "07ea3ceaa93118a2",
+        "type": "ui-group",
+        "name": "Group Name",
+        "page": "cd3e3de44f990c9d",
+        "width": "6",
+        "height": "1",
+        "order": -1,
+        "showTitle": true,
+        "className": ""
+    },
+    {
+        "id": "7677b5a4653cf2bb",
+        "type": "ui-page",
+        "name": "Page Name",
+        "ui": "d6926203db87819c",
+        "path": "/Home",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "386233f10703cec4",
+        "order": -1,
+        "className": ""
+    },
+    {
+        "id": "cd3e3de44f990c9d",
+        "type": "ui-page",
+        "name": "Page Name",
+        "ui": "d6926203db87819c",
+        "path": "/",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "386233f10703cec4",
+        "order": -1,
+        "className": ""
+    },
+    {
+        "id": "60a47f613ecb0a54",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "dcde2b4736ef4c24",
+        "type": "function",
+        "z": "508cc9124d7eeab6",
+        "name": "convert",
+        "func": "const SERIES = [\"drivetrain_consumption\"]\n// Sometimes data has no sense\n/*const LIMIT_LOW = 10\nlet LIMIT_HIGH = 30\nif (msg.topic.indexOf('0, 8') > -1) {\n    LIMIT_HIGH = 3000\n}*/\n\nlet payload = msg.payload\nnode.warn(payload)\nlet data = SERIES.map(m => msg.payload.map(n => n.soc_kwh / (n.mileage_max - n.mileage_min) * 100))\nlet labels = payload.map(m => m.timestamp)\n//node.warn(data)\n//let indexToRemove = []\n/*data[0].forEach((f, i) => {\n    if (f < LIMIT_LOW || f > LIMIT_HIGH) {\n        indexToRemove.push(i)\n    }\n})*/\n\n//labels = labels.filter((f, i) => !indexToRemove.includes(i))\n//data = data.map(m => m.filter((f, i) => !indexToRemove.includes(i)))\n\n//if (data[0].length !== labels.length) node.error(\"Taille différente de liste\")\n\nconst average = data.flat().reduce((a, b) => parseFloat(a) + parseFloat(b), 0) / data.flat().length\nmsg.payload = [{\n    \"series\": [`Consommation - moy.: ${average.toFixed(1)} kWh/100 km`],\n    \"data\": data.map(m => m.map(n => n.toFixed(1))),\n    \"labels\": labels,\n}]\n\nif (global.get('edf').pricing) {\n    const costs = data.map(m => m.map(r => (parseFloat(r) * global.get('edf').pricing['tarif_edf_tempo_bleu_hc'].initial).toFixed(1)))\n    const averageCost = costs.flat().reduce((a, b) => parseFloat(a) + parseFloat(b), 0) / costs.flat().length\n\n    msg.cost = [{\n        \"series\": [`Coût (hc-bleu) - moy.: ${averageCost.toFixed(1)} €/100 km`],\n        \"data\": costs,\n        \"labels\": labels,\n    }]\n}\ndelete msg.topic\ndelete msg.action\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "38ed6a5fa6871842",
+        "type": "sqlite",
+        "z": "f83f9fc08f5e66d7",
+        "mydb": "799e85c6a93a19ad",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "MG database",
+        "x": 760,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6770036c3a166587",
+        "type": "json",
+        "z": "7cf6ee7ab0891d5c",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 670,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f0acb1890ca94018",
+        "type": "subflow:f83f9fc08f5e66d7",
+        "z": "7cf6ee7ab0891d5c",
+        "name": "",
+        "x": 450,
+        "y": 260,
+        "wires": [
+            [
+                "6770036c3a166587",
+                "958f6e2298473bb4"
+            ]
+        ]
+    },
+    {
+        "id": "958f6e2298473bb4",
+        "type": "debug",
+        "z": "7cf6ee7ab0891d5c",
+        "d": true,
+        "name": "debug 69",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "594601dc8c93b65a",
+        "type": "function",
+        "z": "cc759b59f1b564bf",
+        "name": "action",
+        "func": "//https://github.com/SAIC-iSmart-API/saic-python-mqtt-gateway/blob/a9fa48622a9bb4cf75ed1dd70d3e67039ede0f70/vehicle.py#L526\n\nfunction open(value) {\n    return value ? 'ouvert' : 'fermé'\n}\n\nfunction kwh(value){\n    return parseFloat(value).toFixed(1)+ ' kwh' \n}\n\nfunction start(value) {\n    return value ? 'actif' : 'inactif'\n}\n\nfunction time(value) {\n    //2023-10-15T05:12:09.160873+00:00\n    let d = new Date(value)\n    let tmp = d.toISOString().split('T')\n    return tmp[0] + ' ' + d.toLocaleTimeString('fr-FR')\n}\n\nfunction to_charging_schedule_mode(value) {\n    if (value === 1) return 'UNTIL_CONFIGURED_TIME'\n    else if (value === 2) return 'DISABLED'\n    else if (value === 3) return 'UNTIL_CONFIGURED_SOC'\n    else { return 'UNKNOWN MODE ' + value }\n}\n\nfunction onoff(value) {\n    return value === 'on' ? 'actif' : 'inactif'\n}\n\nmsg.action = {\n    \"batteryVoltage\": {\n        \"transform\": \"V\",\n        \"fr\": \"Voltage de la batterie\"\n    },\n    \"doors_bonnet\": {\n        \"transform\": open,\n        \"fr\": \"Capot\"\n    },\n    \"doors_boot\": {\n        \"transform\": open,\n        \"fr\": \"Coffre\"\n    },\n    \"canBusActive\": {\n        \"transform\": false,\n        \"fr\": \"CanBus active\"\n    },\n    \"clstrDspdFuelLvlSgmt\": {\n        \"transform\": false,\n        \"fr\": \"Fuel level\"\n    },\n    \"currentJourneyID\": {\n        \"transform\": false,\n        \"fr\": \"Trajet ID\"\n    },\n    \"currentjourneyDistance\": {\n        \"transform\": \"Km\",\n        \"fr\": \"Distance journalière\"\n    },\n    \"lights_dippedBeam\": {\n        \"transform\": start,\n        \"fr\": \"Feux de croisement\"\n    },\n    \"doors_driver\": {\n        \"transform\": open,\n        \"fr\": \"Porte chauffeur\"\n    },\n    \"windows_driver\": {\n        \"transform\": open,\n        \"fr\": \"Fenêtre chauffeur\"\n    },\n    \"engineStatus\": {\n        \"transform\": start,\n        \"fr\": \"Moteur\"\n    },\n    \"extendedData1\": {\n        \"transform\": false,\n        \"fr\": \"Données 1\"\n    },\n    \"extendedData2\": {\n        \"transform\": false,\n        \"fr\": \"Données 2\"\n    },\n    \"climate_exteriorTemperature\": {\n        \"transform\": \"°C\",\n        \"fr\": \"Température extérieure\"\n    },\n    \"climate_remoteTemperature\": {\n        \"transform\": \"°C\",\n        \"fr\": \"Température intérieure cible\"\n    },\n    \"climate_remoteClimateState\": {\n        \"transform\": undefined,\n        \"fr\": \"A/C\"\n    },\n    \"climate_rearWindowDefrosterHeating\": {\n        \"transform\": onoff,\n        \"fr\": \"Dégivrage arrière\"\n    },\n    \"climate_frontWindowDefrosterHeating\": {\n        \"transform\": onoff,\n        \"fr\": \"Dégivrage avant\"\n    },\n    \"frontLeftSeatHeatLevel\": {\n        \"fr\": \"Chaleur du siége avant-gauche\"\n    },\n    \"tyres_frontLeftPressure\": {\n        \"transform\": \"bar\",\n        \"fr\": \"Pression du pneu avant-gauche\"\n    },\n    \"frontRightSeatHeatLevel\": {\n        \"fr\": \"Chaleur du siége avant-droit\"\n    },\n    \"tyres_frontRightPressure\": {\n        \"transform\": \"bar\",\n        \"fr\": \"Pression du pneu avant-droit\"\n    },\n    \"fuelLevelPrc\": {\n        \"transform\": false,\n        \"fr\": \"Niveau de carburant\"\n    },\n    \"fuelRange\": {\n        \"transform\": false,\n        \"fr\": \"Plage de carburant\"\n    },\n    \"fuelRangeElec\": {\n        \"transform\": false,\n        \"fr\": \"Place de carburant électrique\"\n    },\n    \"handBrake\": {\n        \"transform\": start,\n        \"fr\": \"Frein à main\"\n    },\n    \"climate_interiorTemperature\": {\n        \"transform\": \"°C\",\n        \"fr\": \"Température intérieure\"\n    },\n    \"lastKeySeen\": {\n        \"transform\": false,\n        \"fr\": \"Dernier clé vue\"\n    },\n    \"doors_locked\": {\n        \"transform\": start,\n        \"fr\": \"Verrouillage\"\n    },\n    \"drivetrain_hybrid_electrical_range\": {\n        \"transform\": false,\n    },\n    \"lights_mainBeam\": {\n        \"transform\": start,\n        \"fr\": \"Feux de route\"\n    },\n    \"drivetrain_mileage\": {\n        \"transform\": \"Km\",\n        \"fr\": \"Kilométrage\"\n    },\n    \"doors_passenger\": {\n        \"transform\": open,\n        \"fr\": \"Porte passager\"\n    },\n    \"windows_passenger\": {\n        \"transform\": open,\n        \"fr\": \"Fenêtre passager\"\n    },\n    \"powerMode\": {\n        \"fr\": \"Mode de conduite\"\n    },\n    \"doors_rearLeft\": {\n        \"transform\": open,\n        \"fr\": \"Porte arrière-gauche\"\n    },\n    \"tyres_rearLeftPressure\": {\n        \"transform\": \"bar\",\n        \"fr\": \"Pression du pneu arrière-gauche\"\n    },\n    \"windows_rearLeft\": {\n        \"transform\": open,\n        \"fr\": \"Fenêtre arrière-gauche\"\n    },\n    \"doors_rearRight\": {\n        \"transform\": open,\n        \"fr\": \"Porte arrière-droite\"\n    },\n    \"tyres_rearRightPressure\": {\n        \"transform\": \"bar\",\n        \"fr\": \"Pression du pneu arrière-droit\"\n    },\n    \"windows_rearRight\": {\n        \"transform\": open,\n        \"fr\": \"Fenêtre arrière-droite\"\n    },\n    \"remoteClimateStatus\": {\n        \"fr\": \"Climatisation\"\n    },\n    \"remoteClimateState\": {\n        \"transform\": start,\n        \"fr\": \"Climatisation\"\n    },\n    \"rearWindowDefrosterHeating\": {\n        \"transform\": start,\n        \"fr\": \"Dégivrage arriêre\"\n    },\n    \"rmtHtdRrWndSt\": {\n        \"fr\": \"\"\n    },\n    \"sideLightStatus\": {\n        \"transform\": open,\n        \"fr\": \"Clignotants\"\n    },\n    \"windows_sunRoof\": {\n        \"transform\": false,\n        \"fr\": \"Toit panoramique\"\n    },\n    \"timeOfLastCANBUSActivity\": {\n        \"transform\": false,\n        \"fr\": \"Date de la dernière activité du bus CAN\"\n    },\n    \"vehElecRngDsp\": {\n        \"fr\": \"Dispositif véhcule élec.\"\n    },\n    \"vehicleAlarmStatus\": {\n        \"fr\": \"Alarme\"\n    },\n    \"wheelMonitorStatus\": {\n        \"fr\": \"Alarme pour les pneus\"\n    },\n    \"eventcreationtime\": {\n        \"transform\": time,\n        \"fr\": \"Heure de la requête\"\n    },\n    \"bmspacksocdsp\": {\n        \"transform\": \"%\",\n        \"fr\": \"Etat de charge (SOC)\"\n    },\n    \"realtimepower\": {\n        \"fr\": \"Puissance en temps réel\"\n    },\n    \"bmsestdelecrng\": {\n        \"fr\": \"Audience totale projetée\"\n    },\n    \"drivetrain_mileageOfTheDay\": {\n        \"transform\": \"Km\",\n        \"fr\": \"Kilomètrage journalier\"\n    },\n    \"lastcharge_endtime\": {\n        \"transform\": time,\n        \"fr\": \"Dernier chargement le\"\n    },\n    \"drivetrain_mileageSinceLastCharge\": {\n        \"transform\": \"Km\",\n        \"fr\": \"Kilomètres depuis la dernière charge\"\n    },\n    \"powerusagesincelastcharge\": {\n        \"fr\": \"Consommation depuis la dernière charge\"\n    },\n    \"lastchargeendingpower\": {\n        \"fr\": \"Niveau de la batterie après la dernière charge\"\n    },\n    \"totalbatterycapacity\": {\n        \"fr\": \"Capacité de la batterie\"\n    },\n    \"statusTime\": {\n        \"transform\": time,\n        \"fr\": \"Heure de mise à jour\"\n    },\n    \"bmsReserCtrlDspCmd\": {\n        \"transform\": \"to_charging_schedule_mode\",\n        \"fr\": \"Programmation de la recharge\"\n    },\n    \"bmsReserStHourDspCmd\": {\n        \"fr\": \"Heure de démarrage de la recharge\"\n    },\n    \"bmsReserStMintueDspCmd\": {\n        \"fr\": \"Minute de démarrage de la recharge\"\n    },\n    \"bmsReserSpHourDspCmd\": {\n        \"fr\": \"Heure de fin de la recharge\"\n    },\n    \"bmsReserSpMintueDspCmd\": {\n        \"fr\": \"Minute de fin de la recharge\"\n    },\n    \"bmsOnBdChrgTrgtSOCDspCmd\": {\n        \"fr\": \"Cible de la recharge max.\"\n    },\n    \"bmsEstdElecRng\": {\n        \"fr\": \"\"\n    },\n    \"bmsAltngChrgCrntDspCmd\": {\n        \"fr\": \"\"\n    },\n    \"bmsChrgCtrlDspCmd\": {\n        \"fr\": \"\"\n    },\n    \"chrgngRmnngTime\": {\n        \"transform\": (v) => v * 60,\n        \"fr\": \"Temps restant de chargement\"\n    },\n    \"chrgngRmnngTimeV\": {\n        \"transform\": time,\n        \"fr\": \"\"\n    },\n    \"bmsChrgOtptCrntReq\": {\n        \"fr\": \"\"\n    },\n    \"bmsPackCrnt\": {\n        \"fr\": \"\"\n    },\n    \"bmsPackVol\": {\n        \"fr\": \"\"\n    },\n    \"bmsPackSOCDsp\": {\n        \"transform\": (v) => v / 10 + \" %\",\n        \"fr\": \"SOC\"\n    },\n    \"bmsChrgSts\": {\n        \"fr\": \"\"\n    },\n    \"bmsChrgSpRsn\": {\n        \"fr\": \"\"\n    },\n    \"clstrElecRngToEPT\": {\n        \"fr\": \"\"\n    },\n    \"bmsPTCHeatReqDspCmd\": {\n        \"fr\": \"\"\n    },\n    \"realtimePower\": {\n        \"fr\": \"Puissance en temps réel\"\n    },\n    \"chargingGunState\": {\n        \"transform\": open,\n        \"fr\": \"Etat de branchement\"\n    },\n    \"startTime\": {\n        \"transform\": undefined,\n        \"fr\": \"Heure de démarrage de recharge\"\n    },\n    \"endTime\": {\n        \"transform\": undefined,\n        \"fr\": \"Heure de fin de recharge\"\n    },\n    \"workingCurrent\": {\n        \"transform\": \"I\",\n        \"fr\": \"Intensité en cours\"\n    },\n    \"workingVoltage\": {\n        \"transform\": \"V\",\n        \"fr\": \"Voltage en cours\"\n    },\n    \"powerUsageSinceLastCharge\": {\n        \"fr\": \"Puissance consommée depuis la dernière recharge\"\n    },\n    \"powerUsageOfDay\": {\n        \"transform\": \"W\",\n        \"fr\": \"Puissance consomméé du jour\"\n    },\n    \"chargingDuration\": {\n        \"fr\": \"Durée de la charge\"\n    },\n    \"bmsAdpPubChrgSttnDspCmd\": {\n        \"fr\": \"\"\n    },\n    \"bmsChrgOtptCrntReqV\": {\n        \"fr\": \"\"\n    },\n    \"bmsPackCrntV\": {\n        \"fr\": \"\"\n    },\n    \"bmsPTCHeatResp\": {\n        \"fr\": \"Programmation du chauffage\"\n    },\n    \"ccuEleccLckCtrlDspCmd\": {\n        \"fr\": \"\"\n    },\n    \"bmsDsChrgSpRsn\": {\n        \"fr\": \"\"\n    },\n    \"disChrgngRmnngTime\": {\n        \"transform\": time,\n        \"fr\": \"\"\n    },\n    \"disChrgngRmnngTimeV\": {\n        \"fr\": \"\"\n    },\n    \"imcuVehElecRng\": {\n        \"fr\": \"\"\n    },\n    \"imcuVehElecRngV\": {\n        \"fr\": \"\"\n    },\n    \"imcuChrgngEstdElecRng\": {\n        \"fr\": \"\"\n    },\n    \"imcuChrgngEstdElecRngV\": {\n        \"fr\": \"\"\n    },\n    \"imcuDschrgngEstdElecRng\": {\n        \"fr\": \"\"\n    },\n    \"imcuDschrgngEstdElecRngV\": {\n        \"fr\": \"\"\n    },\n    \"chrgngSpdngTime\": {\n        \"fr\": \"\"\n    },\n    \"chrgngSpdngTimeV\": {\n        \"fr\": \"\"\n    },\n    \"chrgngAddedElecRng\": {\n        \"fr\": \"\"\n    },\n    \"chrgngAddedElecRngV\": {\n        \"fr\": \"\"\n    },\n    \"onBdChrgrAltrCrntInptCrnt\": {\n        \"fr\": \"\"\n    },\n    \"onBdChrgrAltrCrntInptVol\": {\n        \"fr\": \"\"\n    },\n    \"ccuOnbdChrgrPlugOn\": {\n        \"fr\": \"\"\n    },\n    \"ccuOffBdChrgrPlugOn\": {\n        \"fr\": \"\"\n    },\n    \"chrgngPosSts\": {\n        \"fr\": \"\"\n    },\n    \"chrgngOpenCnd\": {\n        \"fr\": \"\"\n    },\n    \"drivetrain_hvBatteryActive\": {\n        \"transform\": start,\n        \"fr\": \"Préchauffage de la batterie\"\n    },\n    \"drivetrain_running\": {\n        \"transform\": start,\n        \"fr\": \"En fonctionnement\"\n    },\n    \"drivetrain_charging\": {\n        \"transform\": start,\n        \"fr\": \"En charge\"\n    },\n    \"drivetrain_auxiliaryBatteryVoltage\": {\n        \"transform\": \"V\",\n        \"fr\": \"Voltage de la batterie auxiliare\"\n    },\n    \"drivetrain_current\": {\n        \"transform\": \"A\",\n        \"fr\": \"Courant\"\n    },\n    \"drivetrain_voltage\": {\n        \"transform\": \"V\",\n        \"fr\": \"Tension\"\n    },\n    \"drivetrain_power\": {\n        \"transform\": undefined,\n        \"fr\": \"Puissance\"\n    },\n    \"drivetrain_socTarget\": {\n        \"transform\": \"%\",\n        \"fr\": \"Charge cible\"\n    },\n    \"drivetrain_soc\": {\n        \"transform\": \"%\",\n        \"fr\": \"Charge\"\n    },\n    \"drivetrain_soc_kwh\": {\n        \"transform\": kwh,\n        \"fr\": \"Puissance courante\"\n    },\n    \"drivetrain_chargingType\": {\n        \"transform\": undefined,\n        \"fr\": \"Type de charge\"\n    },\n    \"drivetrain_chargerConnected\": {\n        \"transform\": start,\n        \"fr\": \"Chargeur connecté\"\n    },\n    \"drivetrain_remainingChargingTime\": {\n        \"transform\": undefined,\n        \"fr\": \"Temps de charge restant\"\n    },\n    \"drivetrain_lastChargeEndingPower\": {\n        \"transform\": kwh,\n        \"fr\": \"Puissance finale lors de la dernière charge\"\n    },\n    \"drivetrain_totalBatteryCapacity\": {\n        \"transform\": kwh,\n        \"fr\": \"Puissance totale de la batterie\"\n    },\n    \"location_speed\": {\n        \"transform\": undefined,\n        \"fr\": \"Vitesse\"\n    },\n    \"location_latitude\": {\n        \"transform\": undefined,\n        \"fr\": \"Latitude\"\n    },\n    \"location_longitude\": {\n        \"transform\": undefined,\n        \"fr\": \"Longitude\"\n    },\n    \"latitude\": {\n        \"transform\": false,\n        \"fr\": \"Latitude\"\n    },\n    \"longitude\": {\n        \"transform\": false,\n        \"fr\": \"Longitude\"\n    },\n    \"info_brand\": {\n        \"transform\": undefined,\n        \"fr\": \"Marque\"\n    },\n    \"info_model\": {\n        \"transform\": undefined,\n        \"fr\": \"Modèle\"\n    },\n    \"info_year\": {\n        \"transform\": undefined,\n        \"fr\": \"Année\"\n    },\n    \"info_series\": {\n        \"transform\": undefined,\n        \"fr\": \"Série\"\n    },\n    \"info_color\": {\n        \"transform\": undefined,\n        \"fr\": \"Couleur\"\n    },\n    \"info_configuration\": {\n        \"transform\": undefined,\n        \"fr\": \"Configuration\"\n    },\n    \"lastMessage_title\": {\n        \"transform\": undefined,\n        \"fr\": \"Titre du message\"\n    }, \"lastMessage_messageTime\": {\n        \"transform\": time,\n        \"fr\": \"Date du message\"\n    }, \"lastMessage_sender\": {\n        \"transform\": undefined,\n        \"fr\": \"Expéditeur du message\"\n    }, \"lastMessage_content\": {\n        \"transform\": undefined,\n        \"fr\": \"Contenu du message\"\n    }, \"refresh_lastVehicleState\": {\n        \"transform\": time,\n        \"fr\": \"Date du dernier status du véhicule\"\n    }, \"refresh_lastChargeState\": {\n        \"transform\": time,\n        \"fr\": \"Date du dernier status de charge\"\n    }\n    , \"refresh_lastActivity\": {\n        \"transform\": time,\n        \"fr\": \"Date de la dernière activité\"\n    }\n    , \"refresh_mode\": {\n        \"transform\": undefined,\n        \"fr\": \"Mode d'actualisation\"\n    }\n    , \"drivetrain_durationToSOCTarget\": {\n        \"transform\": (v) => Math.floor(v) + 'h ' + Math.floor((v - Math.floor(v)) * 60)+ 'mn',\n        \"fr\": \"Nombre d'heure pour recharger\"\n    }\n    , \"drivetrain_priceToSOCTarget\": {\n        \"transform\": '€',\n        \"fr\": \"Coût pour recharger\"\n    }\n    , \"drivetrain_restToSOCTarget\": {\n        \"transform\": kwh,\n        \"fr\": \"Puissance à charger\"\n    }\n    , \"drivetrain_range\": {\n        \"transform\": 'Km',\n        \"fr\": \"Autonomie restante\"\n    }\n    , \"drivetrain_chargeCurrentLimit\": {\n        \"transform\": undefined,\n        \"fr\": \"Ampérage maximale autorisé\"\n    }   \n}\nif (global.get('saic').gateway &&  global.get('edf').pricing) {\n    // 220 V * 9.9 A\n    const powerByHour = 2.178\n    const priceBykwh = global.get('edf').pricing['tarif_edf_tempo_' + global.get('edf').tempo.today.trim() + '_hc'].initial\n\n    global.get('saic').gateway.drivetrain_restToSOCTarget = (global.get('saic').gateway.drivetrain_totalBatteryCapacity * global.get('saic').gateway.drivetrain_socTarget / 100 - global.get('saic').gateway.drivetrain_soc_kwh).toFixed(2)\n    global.get('saic').gateway.drivetrain_durationToSOCTarget = (global.get('saic').gateway.drivetrain_restToSOCTarget / powerByHour).toFixed(1)\n    global.get('saic').gateway.drivetrain_priceToSOCTarget = (global.get('saic').gateway.drivetrain_restToSOCTarget * priceBykwh).toFixed(2)\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b71dc036ccc52791",
+        "type": "function",
+        "z": "94975f0123611419",
+        "name": "tableFormat",
+        "func": "\nfunction flat(o, tmp) {\n    let keys = Object.keys(o);\n    for (let key in keys) {\n        let originalK = keys[key]\n        let originalV = o[keys[key]]\n        let value = originalV\n        if (typeof value === 'object' && value !== null) {\n            flat(o[keys[key]], tmp)\n        } else {\n            let k, v\n            if (msg.action[keys[key]]) {\n                //Definition\n\n                //Value\n                let transform = msg.action[keys[key]].transform\n                if (transform === false) {\n                    v = undefined\n                    //node.warn(keys[key] + ' ignoré')\n                }\n                else if (!transform) {\n                    v = value\n                    //node.warn(keys[key] + ' tel quel')\n                }\n                else if (typeof transform === 'string' || transform instanceof String) {\n                    v = o[keys[key]] + ' ' + transform\n                    //node.warn(keys[key] + ' unité')\n                } else {\n                    //node.warn(keys[key] + ' conversion')\n                    v = transform(o[keys[key]])\n                }\n                //Key\n                k = keys[key]\n                if (msg.action[keys[key]] && msg.action[keys[key]].fr && msg.action[keys[key]].fr.length > 0) {\n                    k = msg.action[keys[key]].fr\n                }\n            } else {\n                //Default\n                k = keys[key]\n                v = o[keys[key]]\n            }\n            let row = { \"key\": k, \"originalK\": originalK, \"value\": v, \"originalV\": originalV }\n\n            if (v) tmp.push(row);\n        }\n\n    }\n}\n\nvar tmp = [];\nflat(global.get('saic').gateway, tmp)\nmsg.payload = tmp.sort((a, b) => {\n    if (a.originalK < b.originalK) {\n        return -1;\n    }\n    if (a.originalK > b.originalK) {\n        return 1;\n    }\n    return 0;\n});\n\nconst category = [\"info\", \"refresh\", 'climate', 'drivetrain', 'location', 'windows', 'doors', 'tyres', 'lights']\ncategory.forEach(c => {\n    msg[c] = tmp.filter(f => f.originalK.startsWith(c)).sort((a, b) => {\n        if (a.key < b.key) {\n            return -1;\n        }\n        if (a.key > b.key) {\n            return 1;\n        }\n        return 0;\n    })\n})\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e8213df97fbe28e7",
+        "type": "ui_button",
+        "z": "d1edf2dfd85d9abb",
+        "name": "",
+        "group": "61532e657ce47050",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "0%",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 120,
+        "wires": [
+            [
+                "79cca29809025f0a"
+            ]
+        ]
+    },
+    {
+        "id": "cdc5923a8f90fac6",
+        "type": "ui_button",
+        "z": "d1edf2dfd85d9abb",
+        "name": "",
+        "group": "0ba8fa73951796fb",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "50%",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "50",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 220,
+        "wires": [
+            [
+                "79cca29809025f0a"
+            ]
+        ]
+    },
+    {
+        "id": "db9d86bfda1964cd",
+        "type": "ui_button",
+        "z": "d1edf2dfd85d9abb",
+        "name": "",
+        "group": "c057fcc6106004d9",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "100%",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "100",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 320,
+        "wires": [
+            [
+                "79cca29809025f0a"
+            ]
+        ]
+    },
+    {
+        "id": "79cca29809025f0a",
+        "type": "function",
+        "z": "d1edf2dfd85d9abb",
+        "name": "Status",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 280,
+        "wires": [
+            [
+                "a1054ee4a42de38a",
+                "1112dc5b25be7e4c",
+                "e44f5507db03ba3d",
+                "b4d62539d7dd504d"
+            ]
+        ]
+    },
+    {
+        "id": "1112dc5b25be7e4c",
+        "type": "mqtt out",
+        "z": "d1edf2dfd85d9abb",
+        "name": "",
+        "topic": "/ThinkIOT/Servo-nodered",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f1650e12897bf060",
+        "x": 810,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "a1054ee4a42de38a",
+        "type": "ui_gauge",
+        "z": "d1edf2dfd85d9abb",
+        "name": "",
+        "group": "9ba1b1dd4509537d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 690,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "0d92f946b021dfe9",
+        "type": "ui_slider",
+        "z": "d1edf2dfd85d9abb",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "e4e15a53b1e7d2f0",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "/ThinkIOT/Servo-nodered",
+        "topicType": "msg",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 190,
+        "y": 420,
+        "wires": [
+            [
+                "79cca29809025f0a",
+                "e44f5507db03ba3d"
+            ]
+        ]
+    },
+    {
+        "id": "e44f5507db03ba3d",
+        "type": "ui_audio",
+        "z": "d1edf2dfd85d9abb",
+        "name": "",
+        "group": "7b50355ec618272d",
+        "voice": "Microsoft Heera - English (India)",
+        "always": false,
+        "x": 700,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "b4d62539d7dd504d",
+        "type": "worldmap-tracks",
+        "z": "d1edf2dfd85d9abb",
+        "name": "",
+        "depth": 20,
+        "layer": "single",
+        "smooth": false,
+        "x": 850,
+        "y": 280,
+        "wires": [
+            [
+                "bf6dff3fb4ca5c7b"
+            ]
+        ]
+    },
+    {
+        "id": "bf6dff3fb4ca5c7b",
+        "type": "ui_worldmap",
+        "z": "d1edf2dfd85d9abb",
+        "group": "61532e657ce47050",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "map",
+        "lat": "",
+        "lon": "",
+        "zoom": "1",
+        "layer": "OSMG",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "layers": "hide",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "true",
+        "coords": "none",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "DR,CO,RA,DN,HM",
+        "maplist": "OSMG,OSMC,EsriC,EsriS,EsriT,EsriDG,UKOS",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 1030,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "d2973d15099cf76b",
+        "type": "inject",
+        "z": "7d3678cbee676bec",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "3ebe302f0abc73b1",
+                "0c11928ea9e346fd",
+                "b4a3b6fcc8b13ab6"
+            ]
+        ]
+    },
+    {
+        "id": "3ebe302f0abc73b1",
+        "type": "http request",
+        "z": "7d3678cbee676bec",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.26.32:3000/getGPS",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 140,
+        "wires": [
+            [
+                "9f403394c8c5cd21"
+            ]
+        ]
+    },
+    {
+        "id": "904cdfe938c2ad89",
+        "type": "ui_text",
+        "z": "7d3678cbee676bec",
+        "group": "61532e657ce47050",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "ph value",
+        "format": "{{msg.payload.ph}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 840,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "9f403394c8c5cd21",
+        "type": "json",
+        "z": "7d3678cbee676bec",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 550,
+        "y": 140,
+        "wires": [
+            [
+                "904cdfe938c2ad89",
+                "628af1de750af149",
+                "40782809c5237650",
+                "9b28cdd4a9de131a"
+            ]
+        ]
+    },
+    {
+        "id": "628af1de750af149",
+        "type": "ui_gauge",
+        "z": "7d3678cbee676bec",
+        "name": "",
+        "group": "9ba1b1dd4509537d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Speed",
+        "label": "Speed",
+        "format": "{{msg.payload.speed}}",
+        "min": 0,
+        "max": "120",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 830,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "47e3e10164fdcd28",
+        "type": "inject",
+        "z": "7d3678cbee676bec",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 560,
+        "wires": [
+            [
+                "8d174b39f776cfad"
+            ]
+        ]
+    },
+    {
+        "id": "c2049148b48b8821",
+        "type": "ui_table",
+        "z": "7d3678cbee676bec",
+        "group": "ca40e8de353b4c2c",
+        "name": "",
+        "order": 2,
+        "width": 16,
+        "height": 5,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 850,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "1571b5432289d1d7",
+        "type": "debug",
+        "z": "7d3678cbee676bec",
+        "name": "debug 70",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "8d174b39f776cfad",
+        "type": "postgresql",
+        "z": "7d3678cbee676bec",
+        "name": "database",
+        "query": "SELECT * FROM ph_values;",
+        "postgreSQLConfig": "3fa68897588c2dc4",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 480,
+        "y": 560,
+        "wires": [
+            [
+                "1571b5432289d1d7",
+                "c2049148b48b8821",
+                "748e0673b0b51f80"
+            ]
+        ]
+    },
+    {
+        "id": "748e0673b0b51f80",
+        "type": "function",
+        "z": "7d3678cbee676bec",
+        "name": "function 1",
+        "func": "// Function Node Code\nvar chartData = msg.payload.map(item => ({ x: item.id, y: item.value }));\nmsg.payload = [{\n  series: ['PH'],\n  data: [chartData],\n  labels: ['']\n}];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 720,
+        "wires": [
+            [
+                "cfb52b09bba22cfc"
+            ]
+        ]
+    },
+    {
+        "id": "cfb52b09bba22cfc",
+        "type": "ui_chart",
+        "z": "7d3678cbee676bec",
+        "name": "",
+        "group": "eed97b0da00c1f11",
+        "order": 1,
+        "width": "12",
+        "height": 5,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 550,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "40782809c5237650",
+        "type": "debug",
+        "z": "7d3678cbee676bec",
+        "name": "debug 73",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 850,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "9b28cdd4a9de131a",
+        "type": "change",
+        "z": "7d3678cbee676bec",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.name",
+                "pt": "msg",
+                "to": "padmanabh",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.lon",
+                "pt": "msg",
+                "to": "payload.longitude",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.lat",
+                "pt": "msg",
+                "to": "payload.latitude",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload.ttl",
+                "pt": "msg",
+                "to": "payload[0].created_at",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 260,
+        "wires": [
+            [
+                "1d63778fe9e5176f"
+            ]
+        ]
+    },
+    {
+        "id": "1d63778fe9e5176f",
+        "type": "worldmap",
+        "z": "7d3678cbee676bec",
+        "name": "map",
+        "lat": "",
+        "lon": "",
+        "zoom": "",
+        "layer": "OSMG",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "none",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "DR,CO,RA,DN,BU,RW,SN,AC,TL",
+        "maplist": "OSMG,OSMC,EsriC,EsriS,UKOS",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 870,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "0c11928ea9e346fd",
+        "type": "postgresql",
+        "z": "7d3678cbee676bec",
+        "name": "time",
+        "query": "SELECT created_at FROM gps_data\nORDER BY created_at DESC\nLIMIT 1;",
+        "postgreSQLConfig": "3fa68897588c2dc4",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 310,
+        "y": 220,
+        "wires": [
+            [
+                "9f403394c8c5cd21"
+            ]
+        ]
+    },
+    {
+        "id": "b4a3b6fcc8b13ab6",
+        "type": "postgresql",
+        "z": "7d3678cbee676bec",
+        "name": "time",
+        "query": "SELECT * FROM gps_data",
+        "postgreSQLConfig": "3fa68897588c2dc4",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 310,
+        "y": 380,
+        "wires": [
+            [
+                "2838e132e08cd188",
+                "fb60a362eb4b18db",
+                "a1c411c021573c11",
+                "02d13793916e371e"
+            ]
+        ]
+    },
+    {
+        "id": "2838e132e08cd188",
+        "type": "ui-table",
+        "z": "7d3678cbee676bec",
+        "group": "07ea3ceaa93118a2",
+        "name": "table",
+        "label": "text",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "maxrows": 0,
+        "autocols": true,
+        "columns": [],
+        "x": 570,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "fb60a362eb4b18db",
+        "type": "ui-chart",
+        "z": "7d3678cbee676bec",
+        "group": "07ea3ceaa93118a2",
+        "name": "",
+        "label": "chart",
+        "order": 9007199254740991,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisProperty": "id",
+        "xAxisPropertyType": "msg",
+        "xAxisType": "linear",
+        "yAxisProperty": "speed",
+        "ymin": "",
+        "ymax": "",
+        "action": "replace",
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "x": 650,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a1c411c021573c11",
+        "type": "debug",
+        "z": "7d3678cbee676bec",
+        "name": "debug 74",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 690,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "02d13793916e371e",
+        "type": "function",
+        "z": "7d3678cbee676bec",
+        "name": "function 2",
+        "func": "// Extract necessary values from the incoming message\n\nvar chartData = msg.payload.map(item => ({ x: item.id, y: item.speed}));\nvar lable = msg.payload.latitude\n// Prepare the data object for the chart node\nmsg.payload = [{\n    series: [\"Speed\"], // Label for the series\n    data: [chartData],\n    labels: [lable]\n}];\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 440,
+        "wires": [
+            [
+                "c58bb9bde0ebf0b9"
+            ]
+        ]
+    },
+    {
+        "id": "c58bb9bde0ebf0b9",
+        "type": "ui_chart",
+        "z": "7d3678cbee676bec",
+        "name": "",
+        "group": "eed97b0da00c1f11",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 630,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    }
+]
